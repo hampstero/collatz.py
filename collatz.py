@@ -9,13 +9,16 @@ def main():
         num = input("\nEnter a natural number. Press Enter to exit. Input plot to show iteration lengths in any desired range\n")
         if num == 'plot':
             rng = input("\nChoose the range\n")
-            collatz_plot.main(int(rng))
+            if isinstance(eval(rng), int) == False:
+                print("Improper input")
+                continue
+            collatz_plot.main(eval(rng))
             continue
         if num == '':
             return
         try:
             num = eval(num)
-            if int(num) == False or num < 0:
+            if isinstance(num, int) == False or num < 0:
                 print("Improper input")
                 continue
         except NameError:
