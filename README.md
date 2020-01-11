@@ -1,5 +1,5 @@
 # collatz.py
 An interactive Collatz conjecture tool.
 
-The program can plot the Collatz conjecture iterations lengths of numbers in range (0,1000), and calculate the iteration length of any
+The program can plot the Collatz conjecture iteration lengths of numbers in a desired range, and calculate the iteration length of any
 natural number. Insert the files collatz.py and collatz_plot.py in the same folder and run collaz.py.
