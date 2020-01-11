@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 
-def main():
+def main(int):
     vals = []
     counts = []
 
-    for i in range(1,1000):
+    for i in range(1,int):
         count = 0
         vals.append(i)
 

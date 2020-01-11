@@ -6,9 +6,10 @@ def main():
 
     while True:
 
-        num = input("\nEnter a natural number. Press Enter to exit. Input plot to show iteration lengths in range (0,1000)\n")
+        num = input("\nEnter a natural number. Press Enter to exit. Input plot to show iteration lengths in any desired range\n")
         if num == 'plot':
-            collatz_plot.main()
+            rng = input("\nChoose the range\n")
+            collatz_plot.main(int(rng))
             continue
         if num == '':
             return
